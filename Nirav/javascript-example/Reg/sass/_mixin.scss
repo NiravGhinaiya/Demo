@@ -1,0 +1,9 @@
+@mixin b-shadow($bs) {
+    box-shadow: $bs;
+}
+
+@mixin pad-mag($pad, $mar) {
+    padding: $pad;
+    margin: $mar;
+}
+

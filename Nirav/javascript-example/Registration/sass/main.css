@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.registration {
+  margin: 8% auto 0;
+}
+.registration h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.registration .res_form {
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px black;
+}
+.registration .res_form input {
+  border: 1px solid rgba(1, 1, 1, 0.3);
+  border-left: 20px solid rgba(1, 1, 1, 0.3);
+  padding: 8px;
+  margin: 0;
+}
+.registration .res_form .gender {
+  border: 1px solid rgba(1, 1, 1, 0.3);
+  border-left: 20px solid rgba(1, 1, 1, 0.3);
+  padding: 8px;
+  margin: 0;
+  background-color: #fff;
+}
+.registration .res_form .gender input {
+  margin-left: 20px;
+  margin-right: 8px;
+}
+.registration .res_form textarea {
+  padding: 8px;
+  margin: 0;
+  border: 1px solid rgba(1, 1, 1, 0.3);
+  border-left: 20px solid rgba(1, 1, 1, 0.3);
+}
+.registration .res_form button {
+  padding: 5px;
+  margin: 0;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px black;
+}
+.registration .res_form button:active {
+  background-color: aqua;
+  color: brown;
+  box-shadow: 4px 4px 7px black;
+  transform: translateY(4px);
+}/*# sourceMappingURL=main.css.map */

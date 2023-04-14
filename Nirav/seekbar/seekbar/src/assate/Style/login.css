@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Kolker+Brush&family=Rock+Salt&display=swap");
+*::-moz-placeholder {
+  font-family: "Baloo 2", cursive;
+}
+*:-ms-input-placeholder {
+  font-family: "Baloo 2", cursive;
+}
+*,
+*::placeholder {
+  font-family: "Baloo 2", cursive;
+}
+
+.ant-modal-content {
+  padding: 0 !important;
+  border-radius: 10px !important;
+}
+
+.ant-input-password {
+  background-color: #eee;
+  height: 46px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+.container .create-acc {
+  opacity: 1 !important;
+  z-index: 5 !important;
+}
+.container .create-acc-op {
+  opacity: 0;
+}
+.container .form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+  width: 80%;
+}
+.container .form-container form {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+}
+.container .form-container form .form-margin h1 {
+  margin-top: 70px !important;
+}
+.container .form-container form .form-container-data {
+  width: 100%;
+}
+.container .form-container form .form-container-data h1 {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+.container .form-container form .form-container-data p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+.container .form-container form .form-container-data a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+.container .form-container form .form-container-data input {
+  background-color: #eee;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+.container .form-container form .form-container-data .form-button-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .form-container form .form-container-data .form-button-content button {
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  background-color: #FF4B2B;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  height: 45px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+.container .form-container form .form-container-data .form-button-content button:hover {
+  background-color: #FF4B2B;
+}
+.container .form-container form .form-container-data .form-button-content button:active {
+  transform: scale(0.95);
+}
+.container .form-container form .form-container-data .form-button-content button:focus {
+  outline: none;
+}
+.container .form-container form .form-container-data .login-create-acc {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+.container .form-container form .form-container-data .login-create-acc a {
+  font-size: 18px;
+  float: right;
+  margin: 0;
+}
+.container .sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+.container .sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+.container .overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+.container .overlay-container .overlay {
+  background: url("../image/loginImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #FFFFFF;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+.container .overlay-container .overlay .overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+.container .overlay-container .overlay .overlay-panel h1 {
+  font-weight: bold;
+  margin: 0;
+}
+.container .overlay-container .overlay .overlay-panel p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 230px 0;
+  padding: 0 20px;
+}
+.container .overlay-container .overlay .overlay-panel button {
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  border-color: #FFFFFF;
+  cursor: pointer;
+}
+.container .overlay-container .overlay .overlay-panel button:active {
+  transform: scale(0.95);
+}
+.container .overlay-container .overlay .overlay-panel button:focus {
+  outline: none;
+}
+.container .overlay-container .overlay .overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  -webkit-animation: show 0.6s;
+          animation: show 0.6s;
+}
+
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+@-webkit-keyframes show {
+  0%, 49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50%, 100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+@keyframes show {
+  0%, 49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50%, 100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+@media only screen and (max-width: 605px) {
+  .ant-form {
+    background: transparent !important;
+  }
+  .container {
+    background: url(../image/loginImage.jpg) !important;
+    background-position: left !important;
+    max-width: 100%;
+    min-height: 600px;
+    background-size: cover !important;
+  }
+  .container .form-container {
+    width: 100% !important;
+  }
+  .container .form-container .form-container-data h1 {
+    color: #fff !important;
+  }
+  .container .form-container .form-container-data .login-create-acc {
+    display: unset !important;
+  }
+  .container .form-container .form-container-data .login-create-acc a {
+    color: #fff !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  .container .form-container .form-container-data .forgotPass {
+    color: #fff !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  .container .overlay-container {
+    display: none;
+  }
+}/*# sourceMappingURL=login.css.map */

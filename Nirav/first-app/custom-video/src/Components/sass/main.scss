@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import 'mixin';
+@import 'color';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $bg-color;
+    width: 100vw;
+}
+
+.gradient-border {
+    padding: 35px 25px;
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 35%;
+    --borderWidth: 3px;
+    background: $bg-color;
+    position: relative;
+    border-radius: var(--borderWidth);
+
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: calc(-1 * var(--borderWidth));
+        left: calc(-1 * var(--borderWidth));
+        height: calc(100% + var(--borderWidth) * 2);
+        width: calc(100% + var(--borderWidth) * 2);
+        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+        border-radius: calc(2 * var(--borderWidth));
+        z-index: -1;
+        animation: animatedgradient 3s ease alternate infinite;
+        background-size: 300% 300%;
+    }
+
+    @keyframes animatedgradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    h1 {
+        @include font('Times New Roman', 500, 50px);
+        text-align: center;
+        letter-spacing: 3px;
+        margin-bottom: 7%;
+        color: $co-w;
+        margin: 0;
+        margin-bottom: 8%;
+    }
+
+    .secOne {
+        display: flex;
+        margin-bottom: 8%;
+
+        input {
+            @include font('normal', 500, 17px);
+            width: 100%;
+            border-radius: 20px;
+            border: 0;
+            padding: 5px 0px 5px 20px;
+        }
+
+        button {
+            @include font('normal', 500, 17px);
+            @include btnTetx;
+            width: auto;
+            margin-left: 15px;
+            padding: 5px 20px;
+            border-radius: 15px;
+            color: $co-w;
+            border: none;
+            outline: none;
+            position: relative;
+            z-index: 0;
+
+            &:before {
+                content: '';
+                background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                background-size: 400%;
+                z-index: -1;
+                filter: blur(5px);
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                animation: glowing 20s linear infinite;
+                opacity: 0;
+                transition: opacity .3s ease-in-out;
+                border-radius: 10px;
+            }
+
+            &:active {
+                color: #000;
+            }
+
+            &:active:after {
+                background: transparent;
+            }
+
+            &:hover:before {
+                opacity: 1;
+            }
+
+            &:after {
+                z-index: -1;
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: $bg-color;
+                border: 1px solid $co-w;
+                left: 0;
+                top: 0;
+                border-radius: 10px;
+            }
+
+            @keyframes glowing {
+                0% {
+                    background-position: 0 0;
+                }
+
+                50% {
+                    background-position: 400% 0;
+                }
+
+                100% {
+                    background-position: 0 0;
+                }
+            }
+        }
+
+    }
+
+    .showData {
+        ul {
+            padding: 0;
+
+            li {
+                display: flex;
+                list-style-type: none;
+                color: $co-w;
+                margin-bottom: 5%
+            }
+
+            p {
+                @include font('normal', 500, 20px);
+                width: 76%;
+                padding: 3px 0px 3px 20px;
+                border: 1px solid $co-w;
+                border-radius: 20px;
+
+                &:hover {
+                    box-shadow: rgba(255, 255, 255, 0.4) 2px 2px, rgba(255, 255, 255, 0.2) 4px 4px, rgba(255, 255, 255, 0.1) 6px 6px, rgba(255, 255, 255, 0.05) 8px 6px;
+                }
+            }
+
+
+
+            button {
+                @include btnTetx;
+                width: auto;
+                font-size: 19px;
+                border: 0;
+                color: $co-w;
+                padding: 2px 6px;
+                margin: 0 5px;
+                transform: translate(2px, 2px);
+
+                &:hover {
+                    text-shadow: 2px 2px 3px $c-text-s;
+                    box-shadow: rgba(255, 255, 255, 0.1) 2px 2px, rgba(255, 255, 255, 0.1) 4px 4px, rgba(255, 255, 255, 0.05) 6px 6px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .secTwo {
+        margin-top: 10%;
+
+        button {
+            @include btnTetx;
+            color: $co-w;
+            font-size: 13px;
+            padding: 7px 20px;
+            border: 0;
+            border: 1px solid $co-w;
+            border-radius: 10px;
+
+            &:hover {
+                box-shadow: rgba(255, 255, 255, 0.4) 2px 2px, rgba(255, 255, 255, 0.2) 4px 4px, rgba(255, 255, 255, 0.1) 6px 6px, rgba(255, 255, 255, 0.05) 8px 6px;
+            }
+        }
+    }
+}
+
+//------------- ( Background Css )-------------------
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1) {
+    @include bglwh(25%, 40px, 40px, 0s);
+}
+
+.circles li:nth-child(2) {
+    @include bglwh(10%, 20px, 20px, 2s);
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    @include bglwh(70%, 20px, 20px, 4s);
+}
+
+.circles li:nth-child(4) {
+    @include bglwh(40%, 60px, 60px, 0s);
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    @include bglwh(65%, 20px, 20px, 0s);
+}
+
+.circles li:nth-child(6) {
+    @include bglwh(75%, 60px, 60px, 3s);
+}
+
+.circles li:nth-child(7) {
+    @include bglwh(35%, 40px, 40px, 9s);
+}
+
+.circles li:nth-child(8) {
+    @include bglwh(50%, 25px, 25px, 15s);
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    @include bglwh(20%, 15px, 15px, 2s);
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    @include bglwh(85%, 40px, 40px, 0s);
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(11) {
+    @include bglwh(75%, 50px, 50px, 3s);
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(12) {
+    @include bglwh(70%, 20px, 20px, 4s);
+}
+
+.circles li:nth-child(13) {
+    @include bglwh(65%, 20px, 20px, 0s);
+    animation-duration: 10s; 
+}
+
+.circles li:nth-child(14) {
+    @include bglwh(20%, 15px, 15px, 2s);
+    animation-duration: 8s;
+}
+
+.circles li:nth-child(15) {
+    @include bglwh(25%, 50px, 50px, 0s);
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(16) {
+    @include bglwh(40%, 60px, 60px, 6s);
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.2;
+        border-radius: 0;
+    }
+
+    50%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0.7;
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+        border-radius: 0;
+    }
+
+}

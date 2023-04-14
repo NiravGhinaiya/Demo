@@ -1,0 +1,13 @@
+.DataList ul{
+    list-style-type: none;
+}
+.DataList li{
+    background-color: whitesmoke;
+    width: 300px;
+    padding: 10px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+}
+.DataList li button{
+    float: right;
+}

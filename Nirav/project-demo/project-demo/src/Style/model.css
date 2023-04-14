@@ -1,0 +1,76 @@
+.model_Delete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete_content {
+    padding: 0 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form_delete_div {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: block;
+    width: 100%;
+    margin-top: 13px;
+}
+
+.delete_btn {
+    font-size: 16px;
+    line-height: 2rem;
+    color: #495568;
+    width: 120px;
+    background: #E8EAF0;
+    font-family: "montserrat_medium";
+    margin: 5px 6px;
+    font-weight: 500;
+    border: 0;
+    padding: 3px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.ant-modal {
+    margin-top: 156px;
+}
+
+.passGen {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    display: block;
+
+}
+
+.edit_modal {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.edit_modal_input {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 12px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+/* -------{ Chart CSS }---------------- */
+
+.user_chart {
+    min-width: 500px;
+    height: auto;
+    border: 0;
+    padding: 15px;
+    background-color: #f5f5f5;
+    margin: 10px;
+    box-shadow: 3px 3px 8px #959595;
+}

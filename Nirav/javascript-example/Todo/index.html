@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <input type="text" id="name" placeholder="Enter Name Item...">
+            <button type="submit" onclick="additem()">Add Name</button>
+        </div>
+        <div class="content">
+            <ul id="box">
+                <li>Apple <span class="fa fa-times" aria-hidden="true"></span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="data.js"></script>
+</body>
+</html>

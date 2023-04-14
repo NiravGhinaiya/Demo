@@ -1,0 +1,64 @@
+@import 'color';
+@import 'mixin';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.registration {
+    margin: 8% auto 0;
+
+    h1{
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    .res_form {
+        @include pad-mag(20px, 0);
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        background-color: $bg-color;
+        border-radius: 15px;
+        box-shadow: 4px 4px 10px $b-blacl;
+
+        input {
+            @include border;
+            @include pad-mag(8px, 0);
+        }
+
+        .gender {
+            @include border;
+            @include pad-mag(8px, 0);
+            background-color: #fff;
+
+            input {
+                margin-left: 20px;
+                margin-right: 8px;
+            }
+        }
+
+        textarea {
+            @include pad-mag(8px, 0);
+            @include border;
+        }
+
+        button {
+            @include pad-mag(5px, 0);
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 1px 1px 4px $b-blacl;
+
+            &:active {
+                background-color: aqua;
+                color:brown;
+                box-shadow: 4px 4px 7px black;
+                transform: translateY(4px);
+            }
+
+        }
+    }
+}

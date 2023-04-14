@@ -1,0 +1,14 @@
+.main-wraper-container {}
+
+.product-data {}
+
+.card-data {
+    width: 200px;
+    height: auto;
+}
+
+.first-wrap img {
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #666;
+    padding: 30px;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+nav {
+    background-color: aliceblue;
+    padding: 20px;
+    float: left;
+    width: 10%;
+    height: 300px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 200px;
+}
+
+li a {
+    text-decoration: none;
+    padding: 10px 8px;
+}
+
+nav a:hover {
+    background-color: floralwhite;
+}
+
+.main-page {
+    background-color: wheat;
+    padding: 30px;
+    float: left;
+    width: 70%;
+    height: 300px;
+}
+
+.main-page h1 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+
+}
+
+.main-page p {
+    text-align: justify;
+}
+
+article {
+    background-color: papayawhip;
+    float: right;
+    width: 20%;
+    height: 300px;
+    padding: 10px;
+}
+
+.data {
+    padding: 30px;
+    margin: -15px;
+    background-color: azure;
+}
+
+.data-bod {
+    padding: 5px;
+    /* background-color: thistle; */
+    border: 1px solid black;
+    text-align: justify;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #666;
+    padding: 30px;
+    color: aliceblue;
+    /* display: flex; */
+}
+
+/* card */
+.blog{
+    text-align: center;
+    margin: 40px 0px;
+}
+.card{
+    /* border: 3px solid black; */
+    margin: 30px 20px;
+    box-shadow: 0.5px 1px 10px black;
+}
+.card h2{
+    font-family: monospace;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin: 15px 0px;
+}
+.card p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+.card button{
+    padding: 10px 20px;
+    margin: 20px 0px;
+}
+
+.post ul{
+    list-style-type: none;
+}
+.post img{
+    width: 60px;
+    height: 60px;
+}
+.post li{
+    display: flex;
+    padding: 10px;
+    /* border-bottom: 1px solid black */
+}
+.post h4, .tags h4{
+    background-color: silver;
+    padding: 20px ;
+    margin: 0;
+}
+.post li:hover{
+    background-color:rgba(169, 169, 169, 0.3 ) ;
+    cursor: pointer;
+}
+.post li > div {
+    padding-left: 20px;
+}
+.tags > div{
+    padding: 15px;
+    text-align: justify;
+}

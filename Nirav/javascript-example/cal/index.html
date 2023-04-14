@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <input type="text" id="inputcal" />
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div>
+                <button value="1" onclick="clickFun('1')">1</button>
+                <button value="2" onclick="clickFun('2')">2</button>
+                <button value="3" onclick="clickFun('3')">3</button>
+                <button value="+" onclick="clickFun('+')">+</button>
+            </div>
+            <div>
+                <button value="4" onclick="clickFun('4')">4</button>
+                <button value="5" onclick="clickFun('5')">5</button>
+                <button value="6" onclick="clickFun('6')">6</button>
+                <button value="-" onclick="clickFun('-')">-</button>
+            </div>
+            <div>
+                <button value="7" onclick="clickFun('7')">7</button>
+                <button value="8" onclick="clickFun('8')">8</button>
+                <button value="9" onclick="clickFun('9')">9</button>
+                <button value="*" onclick="clickFun('*')">*</button>
+            </div>
+            <div>
+                <button onclick="clickFun('0')" value="0">0</button>
+                <button onclick="clickFun('00')" value="00">00</button>
+                <button onclick="clickFun('=')" value="=">=</button>
+                <button onclick="clickFun('/')" value="/">/</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    let tnp = document.getElementById('inputcal')
+    let tempData = 0
+    let total = 0
+
+    function clickFun(temp) {
+        console.log('temp', temp)
+
+        switch (temp) {
+            case "-":
+                tnp.value -= temp 
+                break;
+            case "+":
+                tnp.value += temp 
+                break;
+
+            default:
+                tnp.value += temp
+
+                break;
+        }
+        console.log(total)
+    }
+
+
+
+
+</script>
+
+</html>

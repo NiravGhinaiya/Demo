@@ -1,0 +1,50 @@
+@import "var";
+@import "maix";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+// 1: operators
+// 2: varbales
+// 3: nesting
+// 4: mixin
+// 5: paramters
+// 6: partials
+
+
+.main_header {
+    @include flexprob;
+    width: 100vw;
+    height: 100vw;
+    background-color: $bg-color ;
+
+    h1 {
+        @include commoncode(1.5rem, uppercase, 'Rock Salt');
+        
+        &:hover {
+            color: $txt-color;
+            text-shadow: 5px 5px 15px #222f3e;
+        }
+
+        &::after {
+            content: '...!';
+        }
+    }
+
+    p {
+        @include commoncode(1.9rem, capitalize, 'Kolker Brush');
+
+        &:hover {
+            color: $txt-color;
+            text-shadow: 5px 5px 15px #222f3e;
+        }
+    }
+
+}

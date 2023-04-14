@@ -1,0 +1,168 @@
+body {
+    box-sizing: border-box;
+}
+
+/* Login */
+.l-form_left h1 {
+    margin-bottom: 30px;
+    font-family: cursive;
+    text-shadow: 1px 1px 5px black;
+    color: #fff;
+}
+
+.l-form_left h1:hover {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 10px powderblue;
+    color: rgba(169, 169, 169, 1);
+}
+
+.l-form_left {
+    text-align: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.l-form_left>div {
+    width: fit-content;
+    box-shadow: 2px 3px 9px black;
+    height: auto;
+    border-radius: 15px;
+    padding: 40px 40px 30px 40px;
+    background-color: whitesmoke;
+}
+
+.l-form_left input {
+    padding: 5px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: whitesmoke;
+}
+
+.l-form_left button {
+    padding: 10px 50px;
+    border-radius: 20px;
+    font-family: none;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 3px black;
+    margin-bottom: 50PX;
+}
+
+.l-form_left button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.l-form_left button:active {
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 4px 4px 7px black;
+    transform: translateY(4px);
+}
+
+.l-form_left a {
+    margin-left: 70px;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.l-form_left a:hover {
+    color: black;
+    padding: 8px 16px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 1060px) {
+    .l-form_left>div {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .l-form_left>div {
+        /* margin-left: 25%; */
+        float: left;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .l-form_left > div{
+        margin: 0% 20%;
+    }
+}
+
+
+
+/* Sigup */
+.sigup-form {
+    text-align: center;
+    margin: 18% 0%;
+    padding: 40px 50px 45px 50px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.sigup-form h1 {
+    font-family: cursive;
+    font-size: 30px;
+    margin: 20px 0px 30px 0px;
+    text-shadow: 3px 3px 7px slategrey;
+}
+
+.sigup-form input {
+    padding: 5px 20px;
+    margin: 8px 0px;
+    border-radius: 20px;
+    border: none;
+}
+
+.sigup-form button {
+    padding: 7px 50px;
+    border-radius: 20px;
+    font-family: inherit;
+    font-weight: 700;
+    margin-bottom: 40px;
+    border: 1px solid;
+}
+
+.sigup-form button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.sigup-form button:active {
+    background-color: rgba(169, 169, 169, 0.3);
+    transform: translateY(4px);
+}
+
+
+.sigup-form a {
+    margin-left: 115px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 770px) {
+    .sigup-form {
+        margin: 0% 20%
+    }
+    .sigup img{
+        margin: 10% 20%;
+        float: none;
+        width: auto;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .sigup-form{
+        margin:  0% 8%;
+        padding: 20px;
+    }
+}

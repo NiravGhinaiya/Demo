@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Signup Form</h2>
+        <form action="#" role="form" onsubmit="signUp(event)">
+            <!-- <div class="form-group">
+                <input type="hidden" name="id" id="unik_key">
+            </div> -->
+            <div class="form-group">
+                <input type="text" name="fname" id="fname" placeholder="Enter Your First Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="pwd" id="pwd" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    // function clickCounter() {
+    //     if (localStorage.clickcount) {
+    //         localStorage.clickcount = Number(localStorage.clickcount) + 1;
+    //     } else {
+    //         localStorage.clickcount = 1;
+    //     }
+    //     document.getElementById("demo").innerHTML = localStorage.clickcount;
+    // }
+    const signUp = (e) => {
+
+        const ele = document.getElementById('fname').value
+        let formData = {
+
+            id: document.cookie = ele,
+
+
+            // unik_key : document.getElementById('id').value,
+            fname: document.getElementById('fname').value,
+            lname: document.getElementById('lname').value,
+            email: document.getElementById('email').value,
+            pwd: document.getElementById('pwd').value,
+            // id: document.getElementById('id').value,
+        }
+
+        localStorage.setItem('formData', JSON.stringify(formData));
+        console.log(localStorage.getItem('formData'));
+        // e.preventDefault();
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slide Navbar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../e-commece/index.html"> -->
+    
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form id="signup-form">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="txt" placeholder="User name" required="">
+                <input type="email" name="email" placeholder="Email" id="name1" required="">
+                <input type="password" name="pswd" placeholder="Password" id="pass1" required="">
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login" >
+            <form id="login-form">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="" id="name2">
+                <input type="password" name="pswd" placeholder="Password" required="" id="pass2">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+      $("#signup-form").submit(function () {
+        var nm1 = $("#name1").val();
+        var ps1 = $("#pass1").val();
+        localStorage.setItem("n1", nm1);
+        localStorage.setItem("p1", ps1);
+
+      });
+
+      $("#login-form").submit(function () {
+        var enteredName = $("#name2").val();
+        var enteredPass = $("#pass2").val();
+
+        var storedName = localStorage.getItem("n1");
+        var storedPass = localStorage.getItem("p1");
+
+        if (enteredName == storedName && enteredPass == storedPass) {
+          alert('Login... ')
+        }
+        else {
+          alert("Username and Password do not match!");
+        }
+
+      });
+
+    });
+</script>
+
+</html>

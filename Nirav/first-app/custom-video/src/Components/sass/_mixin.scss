@@ -1,0 +1,19 @@
+@mixin font($ff, $fw, $fs) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+}
+
+@mixin btnTetx() {
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    cursor: pointer;
+}
+
+@mixin  bglwh($bl, $bw, $bh, $bad) {
+    left: $bl;
+    width: $bw;
+    height: $bh;
+    animation-delay: $bad;
+}

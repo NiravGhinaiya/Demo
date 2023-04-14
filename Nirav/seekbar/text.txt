@@ -1,0 +1,11 @@
+A tag -> Target id -> render Tag 
+
+ClocK -- smoth ClocK Demo
+
+Data render to click btn -> Child data display in same click all
+
+Image Click and open Model ->  ImageMap Method
+
+Video -> smooth Slider bar In video Tag
+
+SeekBar -> SeekBar Demo

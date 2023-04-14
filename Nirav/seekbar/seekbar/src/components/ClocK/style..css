@@ -1,0 +1,74 @@
+.hero-circle {
+    width: 180px;
+    height: 149px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mainClock {
+    width: 180px;
+}
+
+.hero-face {
+    width: 180px;
+    height: 149px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clockFram:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    transform: translate(-50%, -50%);
+    height: 7px;
+    background: rgb(8, 8, 8);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    z-index: 9;
+    border: 0.6px solid #fff;
+}
+
+.hero-hour {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -4px 0 -4px -20%;
+    padding: 4px 0 4px 20%;
+    background: rgba(26, 24, 24, 0.808);
+    transform-origin: 100% 50%;
+    border-radius: 4px 0 0 4px;
+}
+
+.hero-minute {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -27% -2px 0;
+    padding: 27% 2px 0;
+    background: rgba(26, 24, 24, 0.808);
+    transform-origin: 50% 100%;
+    border-radius: 3px 3px 0 0;
+}
+
+.hero-second {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -27% -1px 0 0;
+    padding: 27% 1px 0;
+    background: red;
+    border-radius: 3px 3px 0 0;
+    transform-origin: 50% 100%;
+    opacity: 0.7;
+}

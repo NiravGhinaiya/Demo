@@ -1,0 +1,114 @@
+[
+    {
+        "id": "469f9800-c45a-483f-b13e-bd24f3fb79f4",
+        "title": "Utha",
+        "shape": "poly",
+        "name": "1",
+        "fillColor": "#eab54d4d",
+        "strokeColor": "black",
+        "coords": [
+            224,
+            105,
+            255,
+            112,
+            260,
+            80,
+            249,
+            79,
+            250,
+            71,
+            231,
+            68
+        ]
+    },
+    {
+        "id": "469f9800fgh-c45a-483f-b13e-bd24f3fb79f4",
+        "title": "Colorado",
+        "shape": "poly",
+        "name": "1",
+        "fillColor": "#563278",
+        "strokeColor": "black",
+        "coords": [
+            259,
+            80,
+            301,
+            86,
+            299,
+            116,
+            255,
+            111
+        ]
+    },
+    {
+        "id": "469f98fdgdgdf00fgh-c45a-483f-b13e-bd24f3fb79f4",
+        "title": "Wyoming",
+        "shape": "poly",
+        "name": "1",
+        "fillColor": "#abcdef",
+        "strokeColor": "black",
+        "coords": [
+            253,
+            48,
+            293,
+            53,
+            291,
+            84,
+            249,
+            77
+        ]
+    },
+    {
+        "id": "469f98fdgdgdf00fgh-c45a-483f-b13e-bd24f3fb79f4",
+        "title": "Nebraska",
+        "shape": "poly",
+        "name": "1",
+        "fillColor": "#a44d4f",
+        "strokeColor": "black",
+        "coords": [
+            291,
+            84,
+            292,
+            67,
+            305,
+            69,
+            318,
+            69,
+            331,
+            72,
+            336,
+            75,
+            339,
+            81,
+            341,
+            92,
+            302,
+            92,
+            302,
+            85,
+            291,
+            85
+        ]
+    },
+    {
+        "id": "469f98fdgdgdf00fgh-c45a-483f-b13e-bd24f3fb79f4",
+        "title": "Kansas",
+        "shape": "poly",
+        "name": "1",
+        "fillColor": "#925393",
+        "strokeColor": "black",
+        "coords": [
+            299,
+            116,
+            302,
+            93,
+            343,
+            95,
+            346,
+            99,
+            348,
+            117,
+            300,
+            117
+        ]
+    }
+]

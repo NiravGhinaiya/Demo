@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vw;
+  background-color: #10ac84;
+}
+.main_header h1 {
+  color: #222f3e;
+  font-size: 10rem;
+  letter-spacing: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Rock Salt";
+  text-shadow: 8px 8px 15px #fff;
+}
+.main_header h1:hover {
+  color: aliceblue;
+  text-shadow: 5px 5px 15px #222f3e;
+}
+.main_header h1::after {
+  content: "...!";
+}
+.main_header p {
+  color: #222f3e;
+  font-size: 10rem;
+  letter-spacing: 1.9rem;
+  text-transform: capitalize;
+  font-family: "Kolker Brush";
+  text-shadow: 8px 8px 15px #fff;
+}
+.main_header p:hover {
+  color: aliceblue;
+  text-shadow: 5px 5px 15px #222f3e;
+}/*# sourceMappingURL=main.css.map */

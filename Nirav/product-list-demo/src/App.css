@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ant-checkbox .ant-checkbox-inner {
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #008000b5;
+    border-color: #008000b5;
+}
+
+.ant-drawer .ant-drawer-title{
+    font-size: 20px;
+}

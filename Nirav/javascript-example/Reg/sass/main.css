@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/906/895/large_2x/black-rustic-background-free-photo.jpg");
+}
+
+form {
+  padding: 8%;
+  margin: 0;
+}
+
+.reg-form {
+  padding: 20px;
+  margin: 0;
+  border: 0;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-top: 6px double #fff;
+  border-bottom: 6px double #fff;
+  border-radius: 18px;
+}
+.reg-form h1 {
+  text-align: center;
+  margin-bottom: 5%;
+  font-family: auto;
+  text-transform: uppercase;
+  font-size: 27px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(228, 224, 128, 0.5019607843);
+}
+.reg-form input {
+  padding: 5px;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 4%;
+}
+.reg-form .gender {
+  padding: 5px;
+  margin: 0;
+  background-color: #fff;
+  margin-bottom: 4%;
+}
+.reg-form .gender input {
+  width: auto;
+  margin-left: 12%;
+}
+.reg-form textarea {
+  padding: 5px;
+  margin: 0;
+  margin-bottom: 4%;
+}
+.reg-form span {
+  color: red;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.reg-form button {
+  padding: 5px;
+  margin: 0;
+  box-shadow: 1px 1px 4px rgba(1, 1, 1, 0.3);
+  border: 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 4%;
+}
+.reg-form button:active {
+  box-shadow: 4px 4px 7px black;
+  transform: translateY(5px);
+}/*# sourceMappingURL=main.css.map */

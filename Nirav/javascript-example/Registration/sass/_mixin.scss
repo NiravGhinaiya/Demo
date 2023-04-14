@@ -1,0 +1,9 @@
+@mixin border {
+    border: 1px solid $b-color;
+    border-left: 20px solid $b-color;
+}
+
+@mixin pad-mag($pad, $mar) {
+    padding: $pad;
+    margin: $mar;
+}
